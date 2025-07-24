@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Input, Button, Typography, Alert } from "@material-tailwind/react"
-import pasPhoto from '../assets/image/pas photo.JPEG'
+import pasPhoto from '../assets/image/pas-photo.JPEG'
 
 function Hero() {
   const [email, setEmail] = useState('')

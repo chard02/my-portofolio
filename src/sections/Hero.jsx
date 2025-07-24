@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Input, Button, Typography, Alert } from "@material-tailwind/react"
 import pasPhoto from '../assets/image/pas-photo.jpeg'
 
+
 function Hero() {
   const [email, setEmail] = useState('')
   const [submitted, setSubmitted] = useState(false)

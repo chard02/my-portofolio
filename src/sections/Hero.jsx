@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Input, Button, Typography, Alert } from "@material-tailwind/react"
+import pasPhoto from '../assets/image/pas photo.JPEG'
 
 function Hero() {
   const [email, setEmail] = useState('')
@@ -82,7 +83,7 @@ function Hero() {
           <div className="relative">
             <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 opacity-30 blur-2xl"></div>
             <img
-              src="/src/assets/image/pas photo.jpeg" 
+              src= {pasPhoto} 
               alt="Web Developer Workspace"
               className="h-[40rem] w-150 rounded-2xl object-cover shadow-xl relative z-10 border-4 border-white"
             />

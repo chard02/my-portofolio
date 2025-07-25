@@ -38,12 +38,12 @@ function Hero() {
             color="blue-gray"
             className="mb-8 text-4xl lg:text-5xl xl:text-6xl font-bold !leading-tight"
           >
-            Hi! <span className="text-blue-500 relative inline-block">
-              Kamu
+            Hi! Saya <span className="text-blue-500 relative inline-block">
+              Richard
               <svg className="absolute -bottom-2 left-0 w-full" width="100%" height="6" viewBox="0 0 100 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 5C20.6667 1.66667 60.6667 -1 99 5" stroke="#3B82F6" strokeWidth="2" strokeLinecap="round" />
               </svg>
-            </span> Saya Richard
+            </span> 
           </Typography>
           <Typography
             variant="lead"

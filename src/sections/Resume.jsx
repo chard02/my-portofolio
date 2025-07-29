@@ -118,9 +118,10 @@ function Resume() {
             Resume Saya
           </Typography>
           <Typography className="mb-6 w-full font-normal !text-gray-600 lg:w-10/12 leading-relaxed">
-            Pengembang Web terampil dan kreatif dengan pengalaman 5+ tahun dalam merancang
+            Pengembang Web terampil dan kreatif dengan pengalaman 1+ tahun dalam merancang
             website dan aplikasi web yang memukau secara visual dan kuat secara fungsional.
-            Spesialisasi dalam React, Next.js, dan teknologi frontend modern.
+            Memiliki keahlian dalam berbagai bahasa pemrograman, framework, dan alat pengembangan.
+            Berkomitmen untuk memberikan solusi inovatif yang memenuhi kebutuhan klien dan pengguna.
           </Typography>
 
           <div className="flex flex-wrap gap-5 mt-10">

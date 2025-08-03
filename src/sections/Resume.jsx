@@ -128,15 +128,9 @@ function Resume() {
             <Button
               color="blue"
               className="flex items-center gap-3 rounded-full px-6 py-3 shadow-md hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300 group"
-<<<<<<< HEAD
               onClick={() => window.open('/cv.pdf', '_blank')}
             >
               Lihat CV
-=======
-              onClick={() => window.open('/resume.pdf', '_blank')}
-            >
-              Download CV
->>>>>>> 75b6025745e536a01e463a1b46ec9bd776da920e
               <ArrowDownTrayIcon strokeWidth={2} className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-1" />
             </Button>
 

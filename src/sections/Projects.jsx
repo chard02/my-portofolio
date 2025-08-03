@@ -89,11 +89,7 @@ function Projects() {
       
       <div className="container mx-auto mt-20 text-center animate-on-scroll">
         <a
-<<<<<<< HEAD
           href="https://github.com/chard02"
-=======
-          href="https://github.com/yourusername"
->>>>>>> 75b6025745e536a01e463a1b46ec9bd776da920e
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block px-10 py-4 bg-blue-500 text-white rounded-full font-medium hover:bg-blue-600 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20 hover:-translate-y-1 group"

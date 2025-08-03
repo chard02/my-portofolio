@@ -84,8 +84,13 @@ function Contact() {
   }
 
   const contactItems = [
+<<<<<<< HEAD
     { icon: <PhoneIcon className="h-5 w-5 text-white" />, text: "+62 852 6159 1160", href: "tel:+62 852 6159 1160" },
     { icon: <EnvelopeIcon className="h-5 w-5 text-white" />, text: "paulusaritonang002@gmail.com", href: "mailto:paulusaritonang002@gmail.com" },
+=======
+    { icon: <PhoneIcon className="h-5 w-5 text-white" />, text: "+62 812 3456 7890", href: "tel:+6281234567890" },
+    { icon: <EnvelopeIcon className="h-5 w-5 text-white" />, text: "hello@devportfolio.com", href: "mailto:hello@devportfolio.com" },
+>>>>>>> 75b6025745e536a01e463a1b46ec9bd776da920e
     { icon: <TicketIcon className="h-5 w-5 text-white" />, text: "Buka Tiket Support", href: "#support" }
   ]
   

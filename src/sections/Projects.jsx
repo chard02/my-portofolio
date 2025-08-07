@@ -3,6 +3,7 @@ import { Typography, Dialog, DialogHeader, DialogBody, DialogFooter, Button, Chi
 import ProjectCard from "../components/ui/ProjectCard"
 import { XMarkIcon } from "@heroicons/react/24/solid"
 
+
 // Data proyek dengan konten tambahan untuk popup
 const PROJECTS = [
   {

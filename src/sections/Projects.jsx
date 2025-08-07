@@ -6,48 +6,113 @@ import { XMarkIcon } from "@heroicons/react/24/solid"
 // Data proyek dengan konten tambahan untuk popup
 const PROJECTS = [
   {
-    img: "/src/assets/projects/project-1.png",
-    title: "Aplikasi Mobile RestoFinder",
-    description: "Aplikasi mobile yang dirancang untuk membantu pengguna menemukan dan menjelajahi restoran lokal dan masakan favorit.",
-    category: "Mobile",
-    technologies: ["React Native", "Firebase", "Google Maps API"],
-    link: "#",
+    img: "/src/assets/projects/project1.png",
+    title: "TSTH2 Research Center Website",
+    description: "Website terintegrasi untuk manajemen data riset, publikasi ilmiah, dan profil peneliti.",
+    category: "Web Development",
+    technologies: ["Laravel 10", "RESTful API", "Bootstrap 5"],
+    link: "https://tsth2.web.id",
     fullDescription: `
-      <p>RestoFinder adalah solusi mobile lengkap yang membantu pengguna menemukan restoran terdekat berdasarkan preferensi makanan mereka. Aplikasi ini menggunakan geolokasi real-time dan algoritma penyaringan cerdas untuk menampilkan rekomendasi personal.</p>
-      
-      <h3>Fitur Utama:</h3>
+      <p><strong>Design and Development of the TSTH2 Research Center Website</strong> (March–July 2025)</p>
+      <p>Website ini dikembangkan untuk mengelola data riset, publikasi ilmiah, dan profil peneliti secara terstruktur dan terintegrasi.</p>
       <ul>
-        <li>Pencarian restoran berdasarkan lokasi, jenis masakan, dan harga</li>
-        <li>Filter khusus untuk preferensi diet (vegan, gluten-free, dll)</li>
-        <li>Rating dan review dari pengguna</li>
-        <li>Bookmark restoran favorit</li>
-        <li>Navigasi langsung ke restoran pilihan</li>
-        <li>Rekomendasi menu populer di setiap restoran</li>
+        <li>Meningkatkan efisiensi manajemen data penelitian</li>
+        <li>Memfasilitasi kolaborasi peneliti dalam lingkungan TSTH2</li>
+        <li>Menggunakan Laravel 10 (RESTful API) dan Bootstrap 5</li>
       </ul>
-      
-      <h3>Teknologi yang Digunakan:</h3>
-      <p>Aplikasi ini dibangun menggunakan React Native untuk pengembangan cross-platform, Firebase untuk backend dan autentikasi, serta Google Maps API untuk fitur lokasi dan navigasi. Arsitektur aplikasi mengikuti pola Redux untuk manajemen state yang efisien.</p>
-      
-      <h3>Tantangan dan Solusi:</h3>
-      <p>Tantangan utama dalam proyek ini adalah mengoptimalkan permintaan API Maps untuk meminimalkan penggunaan data pengguna sambil tetap memberikan pengalaman real-time. Solusinya adalah implementasi sistem caching cerdas dan batching request untuk mengurangi panggilan API berlebihan.</p>
+      <p><strong>Status:</strong> Dalam proses pengembangan dan diluncurkan Juli 2025.</p>
     `,
     screenshots: [
-      "/src/assets/projects/project-1.png",
-      "/src/assets/projects/project-1.png",
-      "/src/assets/projects/project-1.png"
+      "/src/assets/projects/project1.png"
+    ]
+  },
+  {
+    img: "/src/assets/projects/project-cvtorus.png",
+    title: "CV Torus Jaya Store Website",
+    description: "Website penjualan alat bangunan untuk CV Torus Jaya.",
+    category: "Web Development",
+    technologies: ["Laravel", "MySQL", "HTML", "CSS", "Bootstrap 5", "JavaScript", "Figma"],
+    link: "#",
+    fullDescription: `
+      <p><strong>Final Project Course 1</strong> (June 2023)</p>
+      <p>Proyek ini adalah perancangan website untuk <strong>CV Torus Jaya</strong> yang bergerak di bidang penjualan alat bangunan dan material konstruksi.</p>
+      <ul>
+        <li>Backend: Laravel dan MySQL</li>
+        <li>Frontend: HTML, CSS, Bootstrap 5, JavaScript</li>
+        <li>Desain UI: Figma</li>
+      </ul>
+    `,
+    screenshots: [
+      "/src/assets/projects/project-cvtorus.png"
+    ]
+  },
+  {
+    img: "/src/assets/projects/project-tambunan.png",
+    title: "Tambunan Fertilizer Shop Website",
+    description: "Sistem terdistribusi untuk toko pupuk berbasis Laravel dan Go.",
+    category: "Distributed Web App",
+    technologies: ["Laravel", "Go", "MySQL", "HTML", "CSS", "Bootstrap 5", "JavaScript", "Figma"],
+    link: "#",
+    fullDescription: `
+      <p><strong>Final Project Course 2</strong> (June 2024)</p>
+      <p>Website ini dibuat untuk toko pupuk Tambunan, menggunakan pendekatan <strong>sistem terdistribusi</strong> dengan backend Laravel & Go.</p>
+      <ul>
+        <li>Backend: Laravel dan Go</li>
+        <li>Frontend: HTML, CSS, Bootstrap 5, JavaScript</li>
+        <li>Desain UI: Figma</li>
+      </ul>
+    `,
+    screenshots: [
+      "/src/assets/projects/project-tambunan.png"
+    ]
+  },
+  {
+    img: "/src/assets/projects/project-lollipop.png",
+    title: "Lollipop Café Website",
+    description: "Website kafe berbasis ASP.NET Core C#.",
+    category: ".NET Development",
+    technologies: ["ASP.NET Core", "C#", "CSS", "JavaScript", "JSON"],
+    link: "#",
+    fullDescription: `
+      <p><strong>.NET Technology Programming Course</strong> (May 2024)</p>
+      <p>Website untuk <strong>Lollipop Café</strong> menggunakan framework Microsoft ASP.NET Core.</p>
+      <ul>
+        <li>Backend: ASP.NET Core C#</li>
+        <li>Frontend: CSS, JavaScript, dan JSON</li>
+      </ul>
+    `,
+    screenshots: [
+      "/src/assets/projects/project-lollipop.png"
+    ]
+  },
+  {
+    img: "/src/assets/projects/project-console-java.png",
+    title: "Console App in Java",
+    description: "Aplikasi konsol berbasis Java.",
+    category: "Desktop / Console",
+    technologies: ["Java", "OOP", "Console App"],
+    link: "#",
+    fullDescription: `
+      <p><strong>Object Oriented Programming Course</strong> (November 2023)</p>
+      <p>Aplikasi konsol sederhana dengan prinsip <strong>Object-Oriented Programming</strong> menggunakan Java.</p>
+      <p>Fokus pada pembuatan class, inheritance, polymorphism, dan encapsulation dalam konteks aplikasi dunia nyata.</p>
+    `,
+    screenshots: [
+      "/src/assets/projects/project-console-java.png"
     ]
   }
 ]
 
+
 function Projects() {
   const [open, setOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
-  
+
   const handleOpenDialog = (project) => {
     setSelectedProject(project);
     setOpen(true);
   };
-  
+
   const handleCloseDialog = () => {
     setOpen(false);
   };
@@ -57,7 +122,7 @@ function Projects() {
       {/* Background decorations */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-blue-50 rounded-full -translate-y-1/2 translate-x-1/2 opacity-70"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-50 rounded-full translate-y-1/2 -translate-x-1/2 opacity-70"></div>
-      
+
       <div className="container mx-auto mb-16 text-center animate-on-scroll relative z-10">
         <div className="inline-block mb-3">
           <span className="px-4 py-1.5 bg-blue-50 text-blue-500 rounded-full text-sm font-semibold">
@@ -75,18 +140,18 @@ function Projects() {
           atau website yang membutuhkan pembaruan, saya siap mengubah impian digital Anda menjadi kenyataan.
         </Typography>
       </div>
-      
+
       <div className="container mx-auto grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {PROJECTS.map((project, idx) => (
           <div key={idx} className="animate-on-scroll" style={{ animationDelay: `${idx * 0.1}s` }}>
-            <ProjectCard 
-              {...project} 
+            <ProjectCard
+              {...project}
               onViewDetails={() => handleOpenDialog(project)}
             />
           </div>
         ))}
       </div>
-      
+
       <div className="container mx-auto mt-20 text-center animate-on-scroll">
         <a
           href="https://github.com/chard02"
@@ -100,7 +165,7 @@ function Projects() {
           </span>
         </a>
       </div>
-      
+
       {/* Dialog untuk detail proyek */}
       <Dialog open={open} handler={handleCloseDialog} size="xl" className="bg-white overflow-auto">
         {selectedProject && (
@@ -126,39 +191,39 @@ function Projects() {
                       className="w-full h-auto object-cover"
                     />
                   </div>
-                  
+
                   <Typography variant="h5" color="blue-gray" className="font-semibold mb-4">
                     Tentang Proyek
                   </Typography>
-                  
-                  <div 
+
+                  <div
                     className="prose max-w-none text-gray-600 mb-8"
                     dangerouslySetInnerHTML={{ __html: selectedProject.fullDescription }}
                   />
-                  
+
                   <Typography variant="h5" color="blue-gray" className="font-semibold mb-4">
                     Screenshot
                   </Typography>
-                  
+
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
                     {selectedProject.screenshots.map((screenshot, index) => (
                       <div key={index} className="rounded-lg overflow-hidden border border-gray-100 hover:shadow-md transition-shadow">
-                        <img 
-                          src={screenshot} 
-                          alt={`Screenshot ${index + 1}`} 
+                        <img
+                          src={screenshot}
+                          alt={`Screenshot ${index + 1}`}
                           className="w-full h-auto object-cover"
                         />
                       </div>
                     ))}
                   </div>
                 </div>
-                
+
                 <div className="md:col-span-1">
                   <div className="sticky top-8 bg-gray-50 rounded-xl p-6 border border-gray-100">
                     <Typography variant="h6" color="blue-gray" className="font-semibold mb-4">
                       Informasi Proyek
                     </Typography>
-                    
+
                     <div className="mb-4">
                       <Typography variant="small" className="font-medium text-gray-700 mb-1">
                         Kategori
@@ -171,7 +236,7 @@ function Projects() {
                         className="text-xs font-medium rounded-full"
                       />
                     </div>
-                    
+
                     <div className="mb-4">
                       <Typography variant="small" className="font-medium text-gray-700 mb-2">
                         Teknologi
@@ -189,7 +254,7 @@ function Projects() {
                         ))}
                       </div>
                     </div>
-                    
+
                     <Button
                       fullWidth
                       color="blue"

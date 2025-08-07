@@ -12,35 +12,20 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline"
 
 function ProjectCard({ img, title, description, technologies, link, category, onViewDetails }) {
   const [isHovered, setIsHovered] = useState(false)
-  
+
   return (
-    <Card 
-      className={`overflow-hidden transition-all duration-500 ${
-        isHovered ? 'shadow-xl transform -translate-y-2' : 'shadow-md'
-      } rounded-xl border border-gray-100 hover:border-transparent`}
+    <Card
+      className={`overflow-hidden rounded-2xl border border-gray-200 bg-white transition-all duration-500 ease-in-out
+        ${isHovered ? 'shadow-2xl scale-[1.02]' : 'shadow-md'} hover:border-transparent`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <CardHeader 
-        floated={false} 
-        className="relative h-60 m-0 overflow-hidden cursor-pointer"
+      {/* Header with hover overlay */}
+      <CardHeader
+        floated={false}
+        className="relative h-60 cursor-pointer overflow-hidden rounded-none"
         onClick={onViewDetails}
       >
-        <div className={`absolute inset-0 bg-black/40 z-10 flex items-center justify-center transition-opacity duration-500 ${
-          isHovered ? 'opacity-100' : 'opacity-0'
-        }`}>
-          <Button 
-            color="white" 
-            size="sm" 
-            variant="text" 
-            className={`flex items-center gap-2 transition-all duration-500 ${
-              isHovered ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
-          >
-            Lihat Detail
-            <ArrowTopRightOnSquareIcon strokeWidth={2} className="h-4 w-4" />
-          </Button>
-        </div>
         <img
           src={img}
           alt={title}
@@ -49,58 +34,71 @@ function ProjectCard({ img, title, description, technologies, link, category, on
             transform: isHovered ? 'scale(1.1)' : 'scale(1)'
           }}
         />
+
+        <div className="absolute inset-0 z-10 flex items-center justify-center bg-black/40 transition-opacity duration-500 ease-in-out
+          hover:opacity-100 opacity-0">
+          <Button
+            color="white"
+            size="sm"
+            variant="text"
+            className={`flex items-center gap-2 transition-all duration-500 ease-in-out ${
+              isHovered ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
+            }`}
+          >
+            Lihat Detail
+            <ArrowTopRightOnSquareIcon className="h-4 w-4" strokeWidth={2} />
+          </Button>
+        </div>
+
         <div className="absolute top-4 right-4 z-20">
           <Chip
             value={category}
             size="sm"
-            variant={isHovered ? "filled" : "gradient"}
+            variant="filled"
             color="blue"
-            className={`text-xs font-medium rounded-full px-3 py-1.5 shadow-md transition-all duration-300 ${
-              isHovered ? 'shadow-blue-500/20' : ''
-            }`}
+            className="text-xs font-medium rounded-full px-3 py-1.5 shadow-md"
           />
         </div>
       </CardHeader>
+
+      {/* Body */}
       <CardBody className="p-6">
-        <Typography 
-          variant="h5" 
-          color="blue-gray" 
-          className="mb-3 font-semibold cursor-pointer hover:text-blue-500 transition-colors"
+        <Typography
+          variant="h5"
+          color="blue-gray"
+          className="mb-2 font-bold cursor-pointer hover:text-blue-500 transition-colors"
           onClick={onViewDetails}
         >
           {title}
         </Typography>
-        <Typography className="font-normal text-gray-600 mb-6 line-clamp-3">
+        <Typography className="text-sm text-gray-600 leading-relaxed line-clamp-3">
           {description}
         </Typography>
+
         <div className="flex flex-wrap gap-2 mt-4">
           {technologies.map((tech, index) => (
             <Chip
               key={index}
               value={tech}
               size="sm"
-              variant={isHovered ? "filled" : "outlined"}
-              color={isHovered ? "blue" : "gray"}
-              className={`text-xs font-normal transition-all duration-300 ${
-                isHovered ? 'shadow-sm' : ''
-              }`}
+              variant="outlined"
+              color="gray"
+              className="text-xs font-medium"
             />
           ))}
         </div>
       </CardBody>
-      <CardFooter className="pt-0">
+
+      {/* Footer */}
+      <CardFooter className="pt-4">
         <Button
           fullWidth
-          color={isHovered ? "blue" : "blue-gray"}
-          className={`flex items-center justify-center gap-2 rounded-lg shadow-md transition-all duration-500 ${
-            isHovered ? 'shadow-lg shadow-blue-500/20' : ''
-          }`}
+          color="blue"
+          className="flex items-center justify-center gap-2 rounded-lg shadow-md transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-blue-500/20"
           onClick={onViewDetails}
         >
           Lihat Detail
-          <ArrowTopRightOnSquareIcon strokeWidth={2} className={`h-4 w-4 transition-transform duration-300 ${
-            isHovered ? 'translate-x-1' : ''
-          }`} />
+          <ArrowTopRightOnSquareIcon strokeWidth={2} className="h-4 w-4 transition-transform group-hover:translate-x-1" />
         </Button>
       </CardFooter>
     </Card>

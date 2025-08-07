@@ -7,7 +7,7 @@ import { XMarkIcon } from "@heroicons/react/24/solid"
 // Data proyek dengan konten tambahan untuk popup
 const PROJECTS = [
   {
-    img: "/src/assets/projects/project1.png",
+    img: "/assets/projects/project1.png",
     title: "TSTH2 Research Center Website",
     description: "Website terintegrasi untuk manajemen data riset, publikasi ilmiah, dan profil peneliti.",
     category: "Web Development",
